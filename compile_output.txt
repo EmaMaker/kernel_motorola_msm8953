@@ -1,0 +1,440 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=10
+LINEAGE_VERSION=17.1-20210326-UNOFFICIAL-albus
+TARGET_PRODUCT=lineage_albus
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv8-a
+TARGET_2ND_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.6.7-1-MANJARO-x86_64-Manjaro-Linux
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=QQ3A.200805.001
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=device/motorola/albus vendor/motorola/albus hardware/qcom-caf/msm8996
+============================================
+ninja: no work to do.
+ninja: no work to do.
+No need to regenerate ninja file
+No need to regenerate ninja file
+No need to regenerate ninja file
+Starting ninja...
+[ 16% 1/6] build out/target/product/albus/obj/KERNEL_OBJ/.additional_config
+[ 33% 2/6] Building Kernel Config
+make: Entering directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+make[1]: Entering directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+  GEN     ./Makefile
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+make: Leaving directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+make: Entering directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+make[1]: Entering directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+  GEN     ./Makefile
+scripts/kconfig/conf  --savedefconfig=defconfig Kconfig
+make[1]: Leaving directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+make: Leaving directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+[ 50% 3/6] Building Kernel Image (Image.gz)
+make: Entering directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+make[1]: Entering directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+  GEN     ./Makefile
+scripts/kconfig/conf  --silentoldconfig Kconfig
+  CHK     include/config/kernel.release
+  GEN     ./Makefile
+  CHK     include/generated/uapi/linux/version.h
+  CHK     scripts/mod/devicetable-offsets.h
+  Using /mnt/archive1/Lineage17.1/kernel/motorola/msm8953 as source for kernel
+  CHK     include/generated/utsrelease.h
+  CHK     include/generated/bounds.h
+  CHK     include/generated/asm-offsets.h
+  CALL    /mnt/archive1/Lineage17.1/kernel/motorola/msm8953/scripts/checksyscalls.sh
+make[2]: 'include/generated/vdso-offsets.h' is up to date.
+make[2]: 'include/generated/vdso32-offsets.h' is up to date.
+  CHK     include/generated/compile.h
+  CC      security/apparmor/crypto.o
+  GZIP    kernel/config_data.gz
+  LD      security/apparmor/apparmor.o
+  CHK     kernel/config_data.h
+  LD      security/apparmor/built-in.o
+  LD      security/built-in.o
+  LINK    vmlinux
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  KSYM    .tmp_kallsyms1.o
+  KSYM    .tmp_kallsyms2.o
+  LD      vmlinux
+  SORTEX  vmlinux
+  SYSMAP  System.map
+  OBJCOPY arch/arm64/boot/Image
+  GZIP    arch/arm64/boot/Image.gz
+make[1]: Leaving directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+make: Leaving directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+Building DTBs
+make: Entering directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+make[1]: Entering directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+  CHK     include/config/kernel.release
+  GEN     ./Makefile
+  CHK     include/generated/uapi/linux/version.h
+  CHK     scripts/mod/devicetable-offsets.h
+  Using /mnt/archive1/Lineage17.1/kernel/motorola/msm8953 as source for kernel
+  CHK     include/generated/utsrelease.h
+  CHK     include/generated/bounds.h
+  CHK     include/generated/asm-offsets.h
+  CALL    /mnt/archive1/Lineage17.1/kernel/motorola/msm8953/scripts/checksyscalls.sh
+make[2]: 'include/generated/vdso-offsets.h' is up to date.
+make[2]: 'include/generated/vdso32-offsets.h' is up to date.
+make[1]: Leaving directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+make: Leaving directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+Building Kernel Modules
+make: Entering directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+make[1]: Entering directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+  CHK     include/config/kernel.release
+  GEN     ./Makefile
+  CHK     include/generated/uapi/linux/version.h
+  CHK     scripts/mod/devicetable-offsets.h
+  Using /mnt/archive1/Lineage17.1/kernel/motorola/msm8953 as source for kernel
+  CHK     include/generated/utsrelease.h
+  CHK     include/generated/bounds.h
+  CHK     include/generated/asm-offsets.h
+  CALL    /mnt/archive1/Lineage17.1/kernel/motorola/msm8953/scripts/checksyscalls.sh
+make[2]: 'include/generated/vdso-offsets.h' is up to date.
+make[2]: 'include/generated/vdso32-offsets.h' is up to date.
+  CC [M]  drivers/misc/motomods/v4l2_hal/v4l2_hal.o
+  CC [M]  drivers/misc/motomods/v4l2_hal/v4l2_misc.o
+  CC [M]  drivers/misc/motomods/greybus/core.o
+  CC [M]  drivers/misc/motomods/greybus/debugfs.o
+  CC [M]  drivers/misc/motomods/v4l2_hal/v4l2_hal_ext_ctrls.o
+  CC [M]  drivers/misc/motomods/greybus/hd.o
+  CC [M]  drivers/misc/motomods/greybus/manifest.o
+  CC [M]  drivers/misc/motomods/greybus/interface.o
+  CC [M]  drivers/misc/motomods/greybus/bundle.o
+  CC [M]  drivers/misc/motomods/greybus/connection.o
+  CC [M]  drivers/misc/motomods/greybus/protocol.o
+  CC [M]  drivers/misc/motomods/greybus/control.o
+  CC [M]  drivers/misc/motomods/greybus/svc.o
+  CC [M]  drivers/misc/motomods/greybus/firmware.o
+  CC [M]  drivers/misc/motomods/greybus/operation.o
+  CC [M]  drivers/misc/motomods/greybus/audio.o
+  CC [M]  drivers/misc/motomods/greybus/audio-gb-cmds.o
+  CC [M]  drivers/misc/motomods/greybus/mods_codec.o
+  CC [M]  drivers/misc/motomods/greybus/battery.o
+  LD [M]  drivers/misc/motomods/v4l2_hal/v4l2-hal.o
+  CC [M]  drivers/misc/motomods/greybus/light.o
+  CC [M]  drivers/misc/motomods/greybus/hid.o
+  CC [M]  drivers/misc/motomods/greybus/raw.o
+  CC [M]  drivers/misc/motomods/greybus/muc_sim.o
+  CC [M]  drivers/misc/motomods/greybus/muc_core.o
+  CC [M]  drivers/misc/motomods/greybus/mods_ap.o
+  CC [M]  drivers/misc/motomods/greybus/muc_gpio.o
+  CC [M]  drivers/misc/motomods/greybus/muc_svc.o
+  CC [M]  drivers/misc/motomods/greybus/mods_init.o
+  CC [M]  drivers/misc/motomods/greybus/muc_buffer.o
+  CC [M]  drivers/misc/motomods/greybus/muc_spi.o
+  CC [M]  drivers/misc/motomods/greybus/muc_i2c.o
+  CC [M]  drivers/misc/motomods/greybus/apba.o
+  CC [M]  drivers/misc/motomods/greybus/mods_uart.o
+  CC [M]  drivers/misc/motomods/greybus/mods_uart_pm.o
+  CC [M]  drivers/misc/motomods/greybus/mods_nw.o
+  CC [M]  drivers/misc/motomods/greybus/vendor_moto.o
+  CC [M]  drivers/misc/motomods/greybus/ptp.o
+  CC [M]  drivers/misc/motomods/greybus/camera_ext_gb.o
+  CC [M]  drivers/staging/prima/CORE/DXE/src/wlan_qct_dxe.o
+  CC [M]  drivers/staging/prima/CORE/DXE/src/wlan_qct_dxe_cfg_i.o
+  CC [M]  drivers/misc/motomods/greybus/camera_ext_mod_v4l2.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_assoc.o
+  CC [M]  drivers/misc/motomods/greybus/display.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_cfg.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_debugfs.o
+  CC [M]  drivers/misc/motomods/greybus/usb-ext.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_dev_pwr.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_dp_utils.o
+  CC [M]  drivers/misc/motomods/greybus/sensors_ext.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_early_suspend.o
+  CC [M]  drivers/misc/motomods/greybus/sensors_ext_iio.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_ftm.o
+  LD [M]  drivers/misc/motomods/greybus/gb-audio.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_hostapd.o
+  LD [M]  drivers/misc/motomods/greybus/greybus.o
+  LD [M]  drivers/misc/motomods/greybus/gb-battery.o
+  LD [M]  drivers/misc/motomods/greybus/gb-light.o
+  LD [M]  drivers/misc/motomods/greybus/gb-hid.o
+  LD [M]  drivers/misc/motomods/greybus/gb-raw.o
+  LD [M]  drivers/misc/motomods/greybus/gbsim-mods-sim.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_main.o
+  LD [M]  drivers/misc/motomods/greybus/gb-vendor-moto.o
+  LD [M]  drivers/misc/motomods/greybus/gb-ptp.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_mib.o
+  LD [M]  drivers/misc/motomods/greybus/gb-camera_ext.o
+  LD [M]  drivers/misc/motomods/greybus/gb-display.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_oemdata.o
+  LD [M]  drivers/misc/motomods/greybus/gb-usb_ext.o
+  LD [M]  drivers/misc/motomods/greybus/gb-mods.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_request_manager.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_scan.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_softap_tx_rx.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_tx_rx.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_trace.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_wext.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_wmm.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_wowl.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_cfg80211.o
+  LD [M]  drivers/misc/motomods/greybus/gb-sensors_ext.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_p2p.o
+  CC [M]  drivers/staging/prima/CORE/HDD/src/wlan_hdd_tdls.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/cfg/cfgApi.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/cfg/cfgDebug.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/cfg/cfgParamName.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/cfg/cfgProcMsg.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/cfg/cfgSendMsg.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/dph/dphHashTable.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limAIDmgmt.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limAdmitControl.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limApi.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limAssocUtils.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limDebug.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limFT.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limIbssPeerMgmt.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limLinkMonitoringAlgo.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limLogDump.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limP2P.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessActionFrame.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessAssocReqFrame.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessAssocRspFrame.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessAuthFrame.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessBeaconFrame.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessCfgUpdates.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessDeauthFrame.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessDisassocFrame.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessLmmMessages.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessMessageQueue.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessMlmReqMessages.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessMlmRspMessages.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessProbeReqFrame.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessProbeRspFrame.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessSmeReqMessages.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limPropExtsUtils.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limRMC.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limRoamingAlgo.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limScanResultUtils.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limSecurityUtils.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limSendManagementFrames.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limSendMessages.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limSendSmeRspMessages.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limSerDesUtils.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limSession.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limSessionUtils.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limSmeReqUtils.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limStaHashApi.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limTimerUtils.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limTrace.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limUtils.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/limProcessTdls.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/lim/lim_mbb.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/pmm/pmmAP.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/pmm/pmmApi.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/pmm/pmmDebug.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/sch/schApi.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/sch/schBeaconGen.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/sch/schBeaconProcess.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/sch/schDebug.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/sch/schMessage.o
+  CC [M]  drivers/staging/prima/CORE/MAC/src/pe/rrm/rrmApi.o
+  CC [M]  drivers/staging/prima/CORE/SAP/src/sapApiLinkCntl.o
+  CC [M]  drivers/staging/prima/CORE/SAP/src/sapChSelect.o
+  CC [M]  drivers/staging/prima/CORE/SAP/src/sapFsm.o
+  CC [M]  drivers/staging/prima/CORE/SAP/src/sapModule.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/btc/btcApi.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/ccm/ccmApi.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/ccm/ccmLogDump.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/sme_common/sme_Api.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/sme_common/sme_FTApi.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/sme_common/sme_Trace.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/csr/csrApiRoam.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/csr/csrApiScan.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/csr/csrCmdProcess.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/csr/csrLinkList.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/csr/csrLogDump.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/csr/csrNeighborRoam.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/csr/csrUtil.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/csr/csrTdlsProcess.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/csr/csr_roam_mbb.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/oemData/oemDataApi.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/p2p/p2p_Api.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/pmc/pmcApi.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/pmc/pmc.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/pmc/pmcLogDump.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/QoS/sme_Qos.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/rrm/sme_rrm.o
+  CC [M]  drivers/staging/prima/CORE/SME/src/nan/nan_Api.o
+  CC [M]  drivers/staging/prima/CORE/SVC/src/btc/wlan_btc_svc.o
+  CC [M]  drivers/staging/prima/CORE/SVC/src/nlink/wlan_nlink_srv.o
+  CC [M]  drivers/staging/prima/CORE/SVC/src/ptt/wlan_ptt_sock_svc.o
+  CC [M]  drivers/staging/prima/CORE/SVC/src/logging/wlan_logging_sock_svc.o
+  CC [M]  drivers/staging/prima/CORE/SYS/common/src/wlan_qct_sys.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/pal/src/palApiComm.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/pal/src/palTimer.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/platform/src/VossWrapper.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/system/src/macInitApi.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/system/src/sysEntryFunc.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/utils/src/dot11f.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/utils/src/logApi.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/utils/src/logDump.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/utils/src/macTrace.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/utils/src/parserApi.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/utils/src/utilsApi.o
+  CC [M]  drivers/staging/prima/CORE/SYS/legacy/src/utils/src/utilsParser.o
+  CC [M]  drivers/staging/prima/CORE/TL/src/wlan_qct_tl.o
+  CC [M]  drivers/staging/prima/CORE/TL/src/wlan_qct_tl_ba.o
+  CC [M]  drivers/staging/prima/CORE/TL/src/wlan_qct_tl_hosupport.o
+  CC [M]  drivers/staging/prima/CORE/TL/src/wlan_qct_tl_trace.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_api.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_event.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_getBin.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_list.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_lock.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_memory.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_mq.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_nvitem.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_packet.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_sched.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_threads.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_timer.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_trace.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_types.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_utils.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/wlan_nv_stream_read.o
+  CC [M]  drivers/staging/prima/CORE/VOSS/src/vos_diag.o
+  CC [M]  drivers/staging/prima/CORE/WDA/src/wlan_qct_wda.o
+  CC [M]  drivers/staging/prima/CORE/WDA/src/wlan_qct_wda_debug.o
+  CC [M]  drivers/staging/prima/CORE/WDA/src/wlan_qct_wda_ds.o
+  CC [M]  drivers/staging/prima/CORE/WDA/src/wlan_qct_wda_legacy.o
+  CC [M]  drivers/staging/prima/CORE/WDI/CP/src/wlan_qct_wdi.o
+  CC [M]  drivers/staging/prima/CORE/WDI/CP/src/wlan_qct_wdi_dp.o
+  CC [M]  drivers/staging/prima/CORE/WDI/CP/src/wlan_qct_wdi_sta.o
+  CC [M]  drivers/staging/prima/CORE/WDI/DP/src/wlan_qct_wdi_bd.o
+  CC [M]  drivers/staging/prima/CORE/WDI/DP/src/wlan_qct_wdi_ds.o
+  CC [M]  drivers/staging/prima/CORE/WDI/TRP/CTS/src/wlan_qct_wdi_cts.o
+  CC [M]  drivers/staging/prima/CORE/WDI/TRP/DTS/src/wlan_qct_wdi_dts.o
+  CC [M]  drivers/staging/prima/CORE/WDI/WPAL/src/wlan_qct_pal_api.o
+  CC [M]  drivers/staging/prima/CORE/WDI/WPAL/src/wlan_qct_pal_device.o
+  CC [M]  drivers/staging/prima/CORE/WDI/WPAL/src/wlan_qct_pal_msg.o
+  CC [M]  drivers/staging/prima/CORE/WDI/WPAL/src/wlan_qct_pal_packet.o
+  CC [M]  drivers/staging/prima/CORE/WDI/WPAL/src/wlan_qct_pal_sync.o
+  CC [M]  drivers/staging/prima/CORE/WDI/WPAL/src/wlan_qct_pal_timer.o
+  CC [M]  drivers/staging/prima/CORE/WDI/WPAL/src/wlan_qct_pal_trace.o
+  LD [M]  drivers/staging/prima/wlan.o
+  Building modules, stage 2.
+  MODPOST 16 modules
+  CC      drivers/misc/motomods/greybus/gb-audio.mod.o
+  CC      drivers/misc/motomods/greybus/gb-battery.mod.o
+  CC      drivers/misc/motomods/greybus/gb-camera_ext.mod.o
+  CC      drivers/misc/motomods/greybus/gb-display.mod.o
+  CC      drivers/misc/motomods/greybus/gb-hid.mod.o
+  CC      drivers/misc/motomods/greybus/gb-light.mod.o
+  CC      drivers/misc/motomods/greybus/gb-mods.mod.o
+  CC      drivers/misc/motomods/greybus/gb-ptp.mod.o
+  CC      drivers/misc/motomods/greybus/gb-raw.mod.o
+  CC      drivers/misc/motomods/greybus/gb-sensors_ext.mod.o
+  CC      drivers/misc/motomods/greybus/gb-usb_ext.mod.o
+  CC      drivers/misc/motomods/greybus/gbsim-mods-sim.mod.o
+  CC      drivers/misc/motomods/greybus/gb-vendor-moto.mod.o
+  CC      drivers/misc/motomods/greybus/greybus.mod.o
+  CC      drivers/misc/motomods/v4l2_hal/v4l2-hal.mod.o
+  CC      drivers/staging/prima/wlan.mod.o
+  LD [M]  drivers/misc/motomods/greybus/gb-display.ko
+  LD [M]  drivers/misc/motomods/greybus/gb-light.ko
+  LD [M]  drivers/misc/motomods/greybus/gb-ptp.ko
+  LD [M]  drivers/misc/motomods/greybus/gb-battery.ko
+  LD [M]  drivers/misc/motomods/greybus/gb-raw.ko
+  LD [M]  drivers/misc/motomods/greybus/gb-audio.ko
+  LD [M]  drivers/misc/motomods/greybus/gb-camera_ext.ko
+  LD [M]  drivers/misc/motomods/greybus/gb-hid.ko
+  LD [M]  drivers/misc/motomods/v4l2_hal/v4l2-hal.ko
+  LD [M]  drivers/misc/motomods/greybus/gb-vendor-moto.ko
+  LD [M]  drivers/misc/motomods/greybus/gb-sensors_ext.ko
+  LD [M]  drivers/misc/motomods/greybus/gb-usb_ext.ko
+  LD [M]  drivers/misc/motomods/greybus/gbsim-mods-sim.ko
+  LD [M]  drivers/staging/prima/wlan.ko
+  LD [M]  drivers/misc/motomods/greybus/greybus.ko
+  LD [M]  drivers/misc/motomods/greybus/gb-mods.ko
+make[1]: Leaving directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+make: Leaving directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+Installing Kernel Modules
+make: Entering directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+make[1]: Entering directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+  INSTALL drivers/misc/motomods/greybus/gb-ptp.ko
+  INSTALL drivers/misc/motomods/greybus/gb-battery.ko
+  INSTALL drivers/misc/motomods/greybus/gb-audio.ko
+  INSTALL drivers/misc/motomods/greybus/gb-camera_ext.ko
+  INSTALL drivers/misc/motomods/greybus/gb-hid.ko
+  INSTALL drivers/misc/motomods/greybus/gb-display.ko
+  INSTALL drivers/misc/motomods/greybus/gb-light.ko
+  INSTALL drivers/misc/motomods/greybus/gb-mods.ko
+  INSTALL drivers/staging/prima/wlan.ko
+  INSTALL drivers/misc/motomods/greybus/gb-raw.ko
+  INSTALL drivers/misc/motomods/greybus/gb-sensors_ext.ko
+  INSTALL drivers/misc/motomods/greybus/gb-vendor-moto.ko
+  INSTALL drivers/misc/motomods/greybus/gb-usb_ext.ko
+  INSTALL drivers/misc/motomods/greybus/greybus.ko
+  INSTALL drivers/misc/motomods/greybus/gbsim-mods-sim.ko
+  INSTALL drivers/misc/motomods/v4l2_hal/v4l2-hal.ko
+  DEPMOD  3.18.140-perf-g33f1d969f31a-dirty
+make[1]: Leaving directory '/mnt/archive1/Lineage17.1/out/target/product/albus/obj/KERNEL_OBJ'
+make: Leaving directory '/mnt/archive1/Lineage17.1/kernel/motorola/msm8953'
+depmod: WARNING: could not open modules.order at /mnt/archive1/Lineage17.1/out/target/product/albus/obj/PACKAGING/depmod_vendor_intermediates/lib/modules/0.0: No such file or directory
+depmod: WARNING: could not open modules.builtin at /mnt/archive1/Lineage17.1/out/target/product/albus/obj/PACKAGING/depmod_vendor_intermediates/lib/modules/0.0: No such file or directory
+[ 66% 4/6] target Prebuilt: robolectric_android-all-stub (out/target/product/albus/kernel)
+[ 83% 5/6] Target dt image: out/target/product/albus/dt.img
+DTB combiner:
+  Input directory: 'out/target/product/albus/obj/KERNEL_OBJ/arch/arm64/boot/'
+  Output file: 'out/target/product/albus/dt.img'
+Searching subdir: out/target/product/albus/obj/KERNEL_OBJ/arch/arm64/boot/dts/ ... 
+Searching subdir: out/target/product/albus/obj/KERNEL_OBJ/arch/arm64/boot/dts/apm/ ... 
+Searching subdir: out/target/product/albus/obj/KERNEL_OBJ/arch/arm64/boot/dts/arm/ ... 
+Searching subdir: out/target/product/albus/obj/KERNEL_OBJ/arch/arm64/boot/dts/qcom/ ... 
+Found file: msm8953-albus-p1b.dtb ... 
+Version:2
+chipset: 293, rev: 0, platform: 73, subtype: 33200, pmic0: 0, pmic1: 0, pmic2: 0, pmic3: 0
+Found file: msm8953-albus-p1.dtb ... 
+Version:2
+chipset: 293, rev: 0, platform: 72, subtype: 33184, pmic0: 0, pmic1: 0, pmic2: 0, pmic3: 0
+Found file: msm8953-albus-p3.dtb ... 
+Version:2
+chipset: 293, rev: 0, platform: 74, subtype: 33536, pmic0: 0, pmic1: 0, pmic2: 0, pmic3: 0
+Found file: msm8953-albus-p0.dtb ... 
+Version:2
+chipset: 293, rev: 0, platform: 72, subtype: 32768, pmic0: 0, pmic1: 0, pmic2: 0, pmic3: 0
+Found file: msm8953-albus-p4.dtb ... 
+Version:2
+chipset: 293, rev: 0, platform: 74, subtype: 33792, pmic0: 0, pmic1: 0, pmic2: 0, pmic3: 0
+Found file: msm8953-albus-p2.dtb ... 
+Version:2
+chipset: 293, rev: 0, platform: 73, subtype: 33280, pmic0: 0, pmic1: 0, pmic2: 0, pmic3: 0
+Found file: msm8953-albus-p1a1.dtb ... 
+Version:2
+chipset: 293, rev: 0, platform: 72, subtype: 33185, pmic0: 0, pmic1: 0, pmic2: 0, pmic3: 0
+Searching subdir: out/target/product/albus/obj/KERNEL_OBJ/arch/arm64/boot/dts/cavium/ ... 
+=> Found 7 unique DTB(s)
+
+Generating master DTB... completed
+Made DT image: out/target/product/albus/dt.img
+[100% 6/6] Target boot image: out/target/product/albus/boot.img
+
+[0;32m#### build completed successfully (01:08 (mm:ss)) ####[00m
+
